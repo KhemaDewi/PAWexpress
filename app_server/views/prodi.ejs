@@ -1,0 +1,24 @@
+
+    <p>Ini halaman Prodi</p>
+<div class ="container mt-5">
+    <h1><%= title %></h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>Nama Prodi</th>
+              <th>Fakultas</th>
+              <th>Singkatan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% prodi.forEach(prodi => { %>
+                <tr>
+            <td><%= prodi.NamaProdi %></td>
+            <td><%= prodi.Fakultas %></td>
+            <td><%= prodi.Singkatan %></td>
+        </tr>
+            <% }) %>
+        </tbody>
+
+    </table>
+</div>

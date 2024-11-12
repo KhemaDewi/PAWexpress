@@ -1,0 +1,14 @@
+
+<img src="image/image.png" class="img-fluid" alt="...">
+  <h1>Berita Terkini</h1>
+  
+
+<p>Ini halaman Home</p> 
+
+     <h4>Berita Terkini</h4>
+    <% berita.forEach(data => { %>
+     <h5><%= data.judul %></h5>
+     <p><%= data.isi %></p>
+    <% }) %>
+</body>
+</html>
